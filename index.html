@@ -1,23 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>JOKELGOSHEN Pharmacy</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <!--
       Need a visual blank slate?
       Remove all code in `styles.css`!
     -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/default.css">
+    <script src="https://kit.fontawesome.com/cf7352dd8f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+    <header>
+      <div class="container top">
+        <span class="icon">
+          <i class="fa-regular fa-clock"></i>
+          Mon&#8212; Sat: 8am&#8210;6pm
+        </span>
+        <ul class="social">
+          <li class="social-link"><a href="#">
+            <span class="social-icon"><i class="fa-brands fa-facebook-f"></i></span>
+            <span>Facebook</span>
+          </a></li>
+          <li class="social-link"><a href="#">
+            <span class="social-icon"><i class="fa-brands fa-instagram"></i></span>
+            <span>Instagram</span>
+          </a></li>
+        </ul>
+      </div>
+      <div class="container bottom">
+        <button class="nav-toggler" aria-controls="navDropdown" aria-expanded="false">
+          <span>&#9776;</span>
+        </button>
+        <a class="brand" href="#">JOKELGOSHEN&nbsp;Pharmacy</a>
+        <ul class="menu">
+          <li class="menu-list"><a href="#">Home</a></li>
+          <li class="menu-list"><a href="#">About&nbsp;Us</a></li>
+          <li class="menu-list"><a href="#">Shop</a></li>
+          <li class="menu-list"><a href="#">Franchise</a></li>
+          <li class="menu-list"><a href="#">Contact&nbsp;Us</a></li>
+        </ul>
+      </div>
+    </header>
     <main>
-      <h1>Home page</h1>
+      <section class="container hero-section">
+        <div class="hero-header">
+          <h1>Provide Best Quality Medicine & Service</h1>
+          <p>Backed by trust built through years of expertise</p>
+        </div>
+        <div class="hero-info">
+          <div class="hero-contact">
+            <div class="call-us">
+              <div class="call-us-icon">
+                <img src="./img/telephone-phone-svgrepo-com.svg" alt="telephone">
+              </div>
+              <h2>Call&nbsp;Us</h2>
+              <p>Call us to know more about JOKELGOSHEN&nbsp;Pharmacy</p>
+              <span>+234-081-6062-1093</span>
+            </div>
+
+            <div class="mail-us">
+              <div class="mail-us-icon">
+                <img src="./img/envelope-svgrepo-com.svg" alt="envelop">
+              </div>
+              <h2>Mail&nbsp;Us</h2>
+              <p>Mail us your questions and we will give you the help that you need</p>
+              <span>info@pharmacy.com</span>
+            </div>
+          </div>
+          <div class="hero-franchise">
+            <h2>Franchisee&nbsp;Enquiry</h2>
+            <p>Become a member of a fastest growing pharma-wing Partner and grow together with the fastest growing pharmacy group in Nigeria. Come let's grow together!</p>
+            <a class="franchise-btn btn"  href="#">Click Here&nbsp;
+              <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+      <section class="container about-section upper">
+        <div class="about-image upper">
+          <h2>Who&nbsp;Are&nbsp;We</h2>
+          <div class="doctor-image upper"></div>
+          <div class="medicine-image upper"></div>
+        </div>
+        <div class="about-info upper">
+          <h3>Our work is not just providing medicines, but also about making a difference.</h3>
+          <p>We are a WHOLESALE pharmaceutical company that serve other pharmacies and Medical Patent shops. We offer WHOLESALE on: Drugs/medicines, Supplements, Medical devices/equipments etc., and now ship anywhere in Nigeria and are able to ship the same day. Our work is not just about providing medicines, it's also about making a difference. From ED medication to birth control, we  care about the whole person and make getting your prescriptions fast and easy so that you can focus on the more important things in life.</p>
+          <p>We started the pharmacy with a sole mission of making Quality Medication at Affordable Price available to all.</p>
+          <div class="about-info-btn">
+            <a class="btn green" href="#">Read&nbsp;More</a>
+          </div>
+        </div>
+      </section> 
+      <section class="container about-section lower">
+        <div class="about-info lower">
+          <h3>Treating patients like people, not numbers</h3>
+          <p>Most pharmacies are slow, expensive, and offer little personal interaction. At JOKELGOSHEN Pharmacy, we treat our clients and patients like people and not numbers, offering a better pharmacy experience. We provide personal attention to every one of our customers and work diligently to fill your prescriptions quickly and accurately. Our staff is always happy to help however we can, from answering your questions to transferring prescriptions! <br>Plus, we offer generic drugs starting at just $6 a month.</p>
+          <div class="about-info-btn">
+            <a class="btn transparent" href="#"><i class="fa-solid fa-phone"></i>Contact&nbsp;Us</a>
+          </div>
+        </div>
+        <div class="about-image lower">
+          <div class="doctor-image lower"></div>
+          <div class="medicine-image lower"></div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
