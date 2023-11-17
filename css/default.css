@@ -1,6 +1,7 @@
 :root {
   --green-color: #1FAF9E;
-  --blue-color: #110364;
+  --light-green: #e7fffc;
+  --blue-color: #21156f;
   --white-color: #FFFFFF;
   --alt-white: rgb(253, 253, 253);
   --text-color: #5E5E5E;
@@ -11,15 +12,14 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, "Source Serif 4", "Source Serif 4 Placeholder", serif;
   line-height: 1.75;
   color: black;
   background-color: var(--white-color);
   max-width: 1200px;
   margin: auto;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -36,8 +36,11 @@ img {
   background-color: var(--green-color);
 }
 .container {
+  width: 100%;
   padding-left: 50px;
   padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn {
   font-size: 14px;

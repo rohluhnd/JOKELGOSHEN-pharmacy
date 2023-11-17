@@ -1,0 +1,112 @@
+@import url('styles.css');
+
+main .hero-section-1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 400px;
+  position: relative;
+  background-color: var(--green-color);
+  background: url('../img/_ABY1915.jpg');
+  background-position-y: 60%;
+  background-position-x: 100%;
+}
+.hero-section-1::before {
+  height: 100%;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(30deg,rgba(21,27,38,.8) 0,rgba(0,0,0,.2) 100%);
+  backdrop-filter: 50%;
+}
+.hero-section-1 .hero-header-1 {
+  max-width: 300px;
+  position: relative;
+  top: 220px;
+  color: var(--white-color);
+  z-index: 1;
+}
+.hero-header-1 h1 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+.hero-header-1 p {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+}
+main .about-section-1 {
+  display: flex;
+  gap: 50px;
+}
+.about-section-1 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.about-section-1 .about-image-1  {
+  position: relative; 
+}
+.about-image-1 h2 {
+  color: var(--blue-color);
+  font-size: 30px;
+}
+.about-image-1 .doctor-image-1 {
+  background: url('../img/national-cancer-institute-nR2C9AVzfHY-unsplash.jpg');
+  background-size: cover;
+  background-position-x: 50%;
+  margin-right: 100px;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 30%;
+  width: 400px;
+  height:350px;
+  position: relative;
+  z-index: -1;
+}
+.about-image-1 .doctor-image-1::before {
+  background-color: rgba(153, 151, 151, 0.1);
+  position:absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 30%;
+}
+.about-image-1 .medicine-image-1 {
+  background-image: url('../img/pills-384846_1280.jpg');
+  background-size: cover;
+  background-position-x: 80%;
+  background-position-y: 40%;
+  border-top-right-radius: 15%;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 30%;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+.about-section-1 .about-info-1 {
+  max-width: 600px;
+  padding: 50px;
+}
+.about-info-1 h3 {
+  font-size: 18px;
+  color: var(--blue-color);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+.about-info-1 p {
+  font-size: 14px;
+  color: var(--text-color);
+}

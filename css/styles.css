@@ -6,8 +6,9 @@ header {
   width: 100%;
   max-width: 1200px;
   z-index: 100;
+  margin: 0;
 }
-header .container.top {
+header .top {
   display: flex;
   align-items: center;
   background-color: var(--green-color);
@@ -49,7 +50,7 @@ header .container.top {
   color: var(--green-color);
   font-size: 15px;
 }
-header .container.bottom {
+header .bottom {
   display: flex;
   align-items: center;
   padding-top: 0;
@@ -71,15 +72,15 @@ header .container.bottom {
   align-items: center;
   gap: 30px;
 }
-main .container.hero-section {
+main .hero-section {
   display: flex;
   flex-direction: column;
-  padding-top: 0;
-  padding-bottom: 0;
   height: 500px;
   position: relative;
+  background-color: var(--green-color);
   background: url('../img/image1.jpg');
   background-size: cover;
+  background-position-y: 50%;
 }
 .hero-section::before {
   height: 100%;
@@ -96,7 +97,6 @@ main .container.hero-section {
   position: relative;
   top: 220px;
   color: var(--white-color);
-  z-index: 1;
 }
 .hero-header h1 {
   font-size: 30px;
@@ -182,53 +182,32 @@ main .container.hero-section {
 .franchise-btn i {
   margin-left: 10px;
 }
-main .container.about-section {
-  /* group name*/
+main .about-section {
   display: flex;
-  gap: 50px;
-}
-.container.about-section.upper {
-  padding-top: 200px;
-}
-.container.about-section.lower {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  gap: 30px;
+  margin-top: 300px;
+  margin-bottom: 50px;
 }
 .about-section .about-image  {
-  /* group name*/
   position: relative; 
 }
 .about-image h2 {
   color: var(--blue-color);
   font-size: 30px;
 }
-.about-section .doctor-image {
-  /* group name*/
-  width: 400px;
-  height:350px;
-  position: relative;
-  z-index: -1;
-}
-.about-image .doctor-image.upper {
+.about-image .doctor-image {
   background: url('../img/image2.jpg');
   background-size: cover;
   background-position-x: 30% ;
-  margin-left: 100px;
+  margin-left: 150px;
   border-top-right-radius: 15%;
   border-top-left-radius: 15%;
   border-bottom-right-radius: 30%;
-}
-.about-image .doctor-image.lower {
-  background: url('../img/national-cancer-institute-nR2C9AVzfHY-unsplash.jpg');
-  background-size: cover;
-  background-position-x: 50%;
-  margin-right: 100px;
-  border-top-left-radius: 15%;
-  border-top-right-radius: 15%;
-  border-bottom-left-radius: 30%;
+  width: 400px;
+  height:350px;
+  position: relative;
 }
 .about-image .doctor-image::before {
-  /* group name*/
   background-color: rgba(153, 151, 151, 0.1);
   position:absolute;
   content: "";
@@ -236,24 +215,11 @@ main .container.about-section {
   left: 0;
   right: 0;
   height: 100%;
-}
-.about-image .doctor-image.upper::before {
   border-top-right-radius: 15%;
   border-top-left-radius: 15%;
   border-bottom-right-radius: 30%;
 }
-.about-image .doctor-image.lower::before {
-  border-top-left-radius: 20%;
-  border-top-right-radius: 15%;
-  border-bottom-left-radius: 30%;
-}
 .about-image .medicine-image {
-  /* group name*/
-  width: 200px;
-  height: 200px;
-  z-index: 1;
-}
-.about-image .medicine-image.upper {
   background-image: url('../img/pill-1884775_1280.jpg');
   background-size: cover;
   background-position-x: 40%;
@@ -262,24 +228,15 @@ main .container.about-section {
   border-top-right-radius: 15%;
   border-bottom-left-radius: 30%;
   position: absolute;
-  top: 220px;
+  top: 210px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
 }
-.about-image .medicine-image.lower {
-  background-image: url('../img/pills-384846_1280.jpg');
-  background-size: cover;
-  background-position-x: 80%;
-  background-position-y: 40%;
-  border-top-right-radius: 15%;
-  border-top-left-radius: 15%;
-  border-bottom-right-radius: 30%;
-  position: absolute;
-  bottom: 80px;
-  right: 0;
-}
-.about-section .about-info.upper,
-.about-section .about-info.lower {
+.about-section .about-info {
   max-width: 600px;
   padding: 50px;
+  position: relative;
 }
 .about-info h3 {
   font-size: 18px;
@@ -292,17 +249,189 @@ main .container.about-section {
   font-size: 14px;
   color: var(--text-color);
 }
-.about-info .about-info-btn .green {
+.about-info .about-info-btn{
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  left: -120px;
+}
+.about-info-btn .green {
   background-color: var(--green-color);
   color: var(--white-color);
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
 }
-.about-info .about-info-btn .transparent {
-  color: var(--green-color);
-  padding-left: 20px;
-  padding-right: 20px;
+.about-info-btn .transparent {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px
 }
 .transparent i {
-  margin-right: 10px;
+  margin-right: 5px;
+}
+main .why-us-section {
+  margin-top:200px;
+  margin-bottom: 150px;
+}
+.why-us-header h2 {
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--blue-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.why-us-section .why-us-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.why-us-grid .card {
+  padding: 10px 20px;
+  background-color: rgba(231,255,252,255);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(153, 151, 151, 0.2);
+}
+.card .image {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-right: 15px;
+}
+.card h3 {
+  font-size: 15px;
+}
+.card p {
+  font-size: 14px;
+  color: var(--text-color);
+  margin: 0px 0px 10px 0px;
+}
+main .ask-questions {
+  background-color: rgba(231,255,252,255);
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.ask-questions::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(30deg,rgba(100, 104, 110, 0.1) 0,rgba(231, 231, 231, 0.1) 100%);
+  backdrop-filter:50%;
+  height: 100%;
+}
+.ask-questions .ask-question-content {
+  max-width: 600px;
+}
+.ask-question-content h2 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.3;
+  color: var(--blue-color);
+}
+.ask-question-content p {
+  text-align: center;
+  font-size: 18px;
+}
+.ask-question-content .ask-question-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.ask-question-btn-wrapper a {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--alt-white);
+  border: 1px solid var(--green-color);
+  padding: 15px 30px;
+  background-color: var(--green-color);
+}
+main .product-section {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-section .product-header {
+  max-width: 600px;
+  margin: auto;
+}
+.product-header h2 {
+  font-size: 30px;
+  color: var(--blue-color);
+  font-weight: 600;
+}
+.product-header p {
+  font-size: 14px;
+  text-align: center;
+  color: var(--text-color);
+}
+.product-section .product-table {
+  margin-top: 100px;
+}
+.product-table .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.product-grid .product-card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(153, 151, 151, 0.2);
+}
+.product-grid .product-card:hover {
+  border: 3px dashed var(--green-color);
+}
+.product-grid .product-card.disable {
+  display: none;
+}
+.product-grid .product-card.first {
+  padding-top: 100px;
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.product-card .card-image {
+  margin-bottom: 15px;
+}
+.product-card .card-details {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.card-details .rating i {
+  width: 12px;
+  display: inline-block;
+}
+.card-details.first .rating i {
+  width: 15px;
+}
+.card-details .product-name {
+  font-size: 15px;
+}
+.card-details.first .product-name {
+  font-size: 25px;
+}
+.card-details .product-price{
+  font-size: 16px;
+  color: var(--green-color);
+  margin-top: 3px;
+}
+.card-details.first .product-price {
+  font-size: 20px;
+}
+.card-details a {
+  font-size: 12px;
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+.card-details.first a {
+  font-size: 15px;
 }
