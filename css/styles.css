@@ -248,6 +248,7 @@ main .about-section {
 .about-info p {
   font-size: 14px;
   color: var(--text-color);
+  margin-bottom: 5px;
 }
 .about-info .about-info-btn{
   display: inline-flex;
@@ -469,13 +470,6 @@ main .testimonials {
 .testimonial-card.md p {
   font-size: 14px;
 }
-/* Media queries */
-@media (min-width: 786px) {
-  .testimonial-grid {
-    max-width: 720px;
-    margin: 0 auto;
-  }
-}
 main .ask-questions {
   background-color: rgba(231,255,252,255);
   margin-top: 150px;
@@ -543,7 +537,7 @@ footer .footer-top {
 .address li {
   font-size: 14px;
   margin-top: 5px;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 .address .office span,
 .address .phone span {

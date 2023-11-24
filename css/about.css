@@ -42,6 +42,7 @@ main .hero-section-1 {
 }
 main .about-section-1 {
   display: flex;
+  flex-direction: row;
   gap: 50px;
 }
 .about-section-1 {
