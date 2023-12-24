@@ -10,7 +10,10 @@
     <script src="https://kit.fontawesome.com/cf7352dd8f.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div id="pageTop"></div> <! -- for scroll button -->
+
     <header>
+      <!-- top navbar section  -->
       <div class="container top">
         <span class="icon">
           <i class="fa-regular fa-clock"></i>
@@ -27,19 +30,21 @@
           </a></li>
         </ul>
       </div>
-      <div class="container bottom">
+      <!-- bottom navbar section  -->
+      <nav class="container bottom" id="bottomNav">
         <button class="nav-toggler" aria-controls="navDropdown" aria-expanded="false">
-          <span>&#9776;</span>
+        <span>&#9776;</span>
         </button>
-        <a class="brand" href="#">JOKELGOSHEN&nbsp;Pharmacy</a>
+        <a class="brand" href="./index.html">JOKELGOSHEN&nbsp;Pharmacy</a>
         <ul class="menu">
-          <li class="menu-list"><a href="#">Product</a></li>
+          <li class="menu-list"><a href="#product-section">Product</a></li>
           <li class="menu-list"><a href="./about.html">About&nbsp;Us</a></li>
           <li class="menu-list"><a href="./contact.html">Contact&nbsp;Us</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
-    <main id="goTop">
+    <main>
+      <!-- hero section  -->
       <section class="container hero-section">
         <div class="hero-header">
           <h1>Provide Best Quality Medicine & Service</h1>
@@ -73,26 +78,32 @@
           </div>
         </div>
       </section>
+      <!-- who are we section  -->
       <section class="container about-section">
         <div class="about-image">
           <h2>Who&nbsp;Are&nbsp;We</h2>
-          <div class="doctor-image"></div>
-          <div class="medicine-image"></div>
+          <div class="about-image-wrapper">
+            <div class="image">
+              <div class="doctor-image"></div>
+              <div class="medicine-image"></div>
+              <ul class="image-btn">
+                <li><a class="btn green" href="#">Read&nbsp;More</a></li>
+                <li><a class="btn transparent" href="#"><i class="fa-solid fa-phone"></i>Contact&nbsp;Us</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="about-info">
           <h3>Treating patients like people, not numbers</h3>
           <p>Most pharmacies are slow, expensive, and offer little personal interaction. At JOKELGOSHEN Pharmacy, we treat our clients and patients like people and not numbers, offering a better pharmacy experience. We provide personal attention to every one of our customers and work diligently to fill your prescriptions quickly and accurately.
             </p>
             <p> Our staff are always happy to help however we can, from answering your questions to transferring prescriptions! Plus, we offer generic drugs starting at just $6 a month.</p>
-          <div class="about-info-btn">
-            <a class="btn green" href="#">Read&nbsp;More</a>
-            <a class="btn transparent" href="#"><i class="fa-solid fa-phone"></i>Contact&nbsp;Us</a>
-          </div>
         </div>
-      </section> 
+      </section>
+      <!-- why choose us section  -->
       <section class="container why-us-section">
         <div class="why-us-header">
-          <h2>Why You Should Choose Us</h2>
+          <h2>Why Choose Us</h2>
         </div>
         <div class="why-us-grid">
           <div class="honesty card">
@@ -118,7 +129,8 @@
           </div>
         </div>
       </section>
-      <section class="container product-section">
+      <!-- product section  -->
+      <section class="container product-section" id="product-section">
         <div class="product-header">
           <h2>What Do You Need Today?</h2>
           <p>Check our featured available products and deals</p>
@@ -210,26 +222,10 @@
                 <a class="btn" href="./contact.html"><i></i>PLACE ORDER</a>
               </div>
             </div>  
-            <div class="product-card disable">
-              <div class="card-image">
-                <img src="./img/IMG_6288.PNG" alt="product">
-              </div>
-              <div class="card-details">
-                <span class="rating">
-                  <i><img src="./img/star.svg" alt="star"></i>
-                  <i><img src="./img/star.svg" alt="star"></i>
-                  <i><img src="./img/star.svg" alt="star"></i>
-                  <i><img src="./img/star.svg" alt="star"></i>
-                  <i><img src="./img/star_empty.svg" alt="star"></i>
-                </span>
-                <div class="product-name">Reload (Women's Formula)</div>
-                <h3 class="product-price">$9.80</h3>
-                <a class="btn" href="./contact.html"><i></i>PLACE ORDER</a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
+      <!-- product slider section  -->
       <section class="container product-slider">
         <div class="slider">
           <div class="image">
@@ -243,11 +239,11 @@
           </div>
         </div> 
       </section>
+      <!-- testimonial section  -->
       <section class="container testimonials">
         <div class="testimonial-header">
           <h2>What are people saying!</h2>
         </div>
-      
         <div class="testimonial-grid">
           <div class="testimonial-card lg">
             <div class="top">
@@ -264,7 +260,6 @@
               </span>
             </div>
           </div>
-    
           <div class="testimonial-card md">
             <div class="top">
               <img src="https://randomuser.me/api/portraits/men/91.jpg" class="profile">
@@ -277,7 +272,6 @@
               <p>Superintendent Pharmacist with over 7 years of integrated work experience in community and hospital work settings. </p>
             </div>
           </div>
-    
           <div class="testimonial-card md">
             <div class="top">
               <img src="https://randomuser.me/api/portraits/women/30.jpg" class="profile">
@@ -292,6 +286,7 @@
           </div>
         </div>
       </section>
+      <!-- ask a pharmacist section  -->
       <section class="ask-questions">
         <div class="ask-question-content">
           <h2>Ask a pharmacist, <br> not the internet.</h2>
@@ -301,68 +296,93 @@
           </div>
         </div>
       </section>
-      <footer>
-        <div class="footer-top">
-          <div class="info">
-            <h2>JOKELGOSHEN-Pharmacy</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <ul class="address">
-              <li class="office">
-                <span>Branch Office:</span> Mirakel Plaza, beside NIPCO filling station, Eneka Road, Igwuruta, Port Harcourt</li>
-              <li class="phone">
-                <span>Phone:</span> +234 810-381-2868</li>
-            </ul>
-            <ul class="social">
-              <li>
-                <a href="https://www.facebook.com/profile.php?id=61553356627083&mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-square-facebook"></i></a>
-              </li>
-              <li>
-                <a href="https://instagram.com/jokelgoshen?igshid=YWYwM2I1ZDdmOQ=="><i class="fa-brands fa-square-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="link">
-            <h3>Links</h3>
-            <ul>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-right"></i>Products</a></li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-right"></i>Franchise</a></li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-right"></i>Partners</a></li>
-              <li>
-                <a href="#"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="support">
-            <h3>Support</h3>
-            <ul>
-              <li>Ask a pharmacist</li>
-              <li>Help Center</li>
-              <li>Terms of services</li>
-            </ul>
-          </div>
-          <div class="services">
-            <h3>Services</h3>
-            <ul>
-              <li>Wholesale</li>
-              <li>Retail Sale</li>
-              <li>Treatment</li>
-              <li>Delivery</li>
-              <li>Laboratory</li>
-              <li>Consultancy</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-copyright">
-          <span>Copyright&#x00A9;2023 JOKELGOSHEN-Pharmacy. All right Reserved</span>
-        </div>
-      </footer> 
     </main>
+    <!-- footer section  -->
+    <footer>
+      <div class="footer-top">
+        <div class="info">
+          <h2>JOKELGOSHEN-Pharmacy</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <ul class="address">
+            <li class="office">
+              <span>Branch Office:</span> Mirakel Plaza, beside NIPCO filling station, Eneka Road, Igwuruta, Port Harcourt</li>
+            <li class="phone">
+              <span>Phone:</span> +234 810-381-2868</li>
+          </ul>
+          <ul class="social">
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61553356627083&mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-square-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://instagram.com/jokelgoshen?igshid=YWYwM2I1ZDdmOQ=="><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="link">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-chevron-right"></i>Products</a></li>
+            <li>
+              <a href="#"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
+            <li>
+              <a href="#"><i class="fa-solid fa-chevron-right"></i>Franchise</a></li>
+            <li>
+              <a href="#"><i class="fa-solid fa-chevron-right"></i>Partners</a></li>
+            <li>
+              <a href="#"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="support">
+          <h3>Support</h3>
+          <ul>
+            <li>Ask a pharmacist</li>
+            <li>Help Center</li>
+            <li>Terms of services</li>
+          </ul>
+        </div>
+        <div class="services">
+          <h3>Services</h3>
+          <ul>
+            <li>Wholesale</li>
+            <li>Retail Sale</li>
+            <li>Treatment</li>
+            <li>Delivery</li>
+            <li>Laboratory</li>
+            <li>Consultancy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <span>Copyright&#x00A9;2023 JOKELGOSHEN-Pharmacy. All right Reserved</span>
+      </div>
+    </footer> 
+
+    <a id="scrollUp" href="#pageTop">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+    
+    <script>
+      const nav = document.getElementById('bottomNav');
+      window.onscroll = function () {
+        if(window.pageYOffset > 100) {
+          nav.classList.add('sticky');
+        } else {
+          nav.classList.remove('sticky');
+        }
+      }
+    
+      const navButton = document.querySelector('button[aria-expanded]');
+      
+      function toggleNav({ target }) {
+        const expanded = target.getAttribute('aria-expanded') === "true" || false;
+        navButton.setAttribute("aria-expanded", !expanded);
+      }
+      
+      navButton.addEventListener("click", toggleNav);
+    </script>
   </body>
 </html>

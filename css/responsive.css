@@ -1,41 +1,86 @@
-/* Media queries */
-@media (min-width: 786px) {
-  .testimonial-grid {
-    max-width: 720px;
-    margin: 0 auto;
-  }
+
+  @media screen and (max-width: 1114px) {
+    .hero-section .hero-info {
+      bottom: -320px;
+    }
+    main .about-section {
+      margin-top: 400px;
+    }
+    .about-section-1 {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+    }
 }
-@media (max-width: 860px) {
-  .about-section-1 {
-    flex-wrap: wrap-reverse;
+/* For iPads and Tablets- Portrait */
+@media screen and (min-width: 435px ) and (max-width: 884px) {
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  [aria-controls="navDropdown"] {
+    display: block;
+  }
+  [aria-expanded="false"] ~ .menu {
+    display: none; 
+  } 
+  [aria-expanded="true"] ~ .menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: var(--size-70);
+    width: 100%;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+    box-shadow: 0px 0px 20px rgba(59, 56, 80, 0.1);
+    text-align: right;
+    margin-bottom: var(--size-10);
+  }
+  [aria-expanded="true"] ~ .menu .menu-list a {
+    display: block;
+    margin-right: var(--size-50);
+    color: var(--font-color-dark);
+  }
+  main .hero-section {
+    display: flex;
     justify-content: center;
   }
-  .contact-wrapper {
-    /* gap: 10px; */
+  .hero-section .hero-info {
+    max-width: 708px;
+    flex-wrap: wrap;
   }
-}
-/* Begin Contact-section Media Queries*/
-@media screen and (max-width: 850px) {
-  .contact-wrapper {
-    display: flex;
-    flex-direction: column;
+  .hero-info .hero-contact {
+    flex: 1;
   }
-  .contact-info, .contact-form {
-    margin: 0 auto;
-  }  
-  .contact-info {
-    margin-top: 60px;
-    max-width: 300px;
-  }    
-  .social-media-list li {
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
+  .hero-info .hero-contact .call-us,
+  .hero-info .hero-contact .mail-us {
+    padding: var(--size-10) var(--size-30);
+    text-align: center;
   }
-  .social-media-list li:after {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+  main .about-section {
+    margin-top: 400px;
+    flex-wrap: wrap;
+  }
+  .about-image h2 {
+    text-align: center;
+    margin-bottom: var(--size-30);
+  }
+  .about-image-wrapper .image-btn{
+    right: -80px;
+  }
+  .about-section .about-info {
+    max-width: 700px;
+  }
+  main .why-us-section {
+    margin-top: 50px;
+    margin-bottom: var(--size-150);
+  }
+  .why-us-section .why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: var(--size-30);
+    place-items: center;
+  }
+  #scrollUp {
+    right: var(--size-50);
   }
 }
 @media screen and (max-width: 569px) {
@@ -50,7 +95,7 @@
     width: 280px;
   } 
   .contact-info {
-    margin-top: 60px;
+    margin-top: var(--size-60);
     max-width: 280px;
   }  
   .social-media-list {
@@ -68,7 +113,112 @@
     line-height: 55px;
   }
 }
-@media screen and (max-width: 410px) {
+/* For mobile phones- Portrait */
+@media screen and (max-width: 430px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  [aria-controls="navDropdown"] {
+    display: block;
+  }
+  [aria-expanded="false"] ~ .menu {
+    display: none; 
+  } 
+  [aria-expanded="true"] ~ .menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: var(--size-70);
+    width: 100%;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+    box-shadow: 0px 0px 20px rgba(59, 56, 80, 0.1);
+    text-align: right;
+    margin-bottom: var(--size-10);
+  }
+  [aria-expanded="true"] ~ .menu .menu-list a {
+    display: block;
+    margin-right: var(--size-50);
+    color: var(--font-color-dark);
+  }
+  .top .icon {
+    margin-right: auto;
+    font-size: var(--size-10);
+  }
+  .social li a {
+    font-size: var(--size-10);
+  }
+  .navbar .brand img {
+    width: var(--size-100);
+  }
+  main .hero-section {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-section .hero-info {
+    max-width: 400px;
+    flex-wrap: wrap;
+  }
+  .hero-info .hero-contact {
+    flex: 1;
+  }
+  .hero-info .hero-contact .call-us,
+  .hero-info .hero-contact .mail-us {
+    padding: var(--size-10) var(--size-30);
+    text-align: center;
+  }
+  .call-us div, 
+  .mail-us div {
+    margin: auto;
+    width: var(--size-40);
+    height: var(--size-40);
+    border-radius: 50%;
+  }
+  .call-us span, 
+  .mail-us span {
+  font-size: var(--size-10);
+  font-weight: 600;
+  }
+  main .about-section {
+    margin-top: 400px;
+    flex-wrap: wrap;
+  }
+  .about-image h2 {
+    text-align: center;
+    margin-bottom: var(--size-30);
+  }
+  .image .doctor-image {
+    margin-left: var(--size-80);
+    width: 300px;
+    height:250px;
+  }
+  .image .medicine-image {
+    left: var(--size-20);
+    width: 150px;
+    height: 150px;
+  }
+  .about-image-wrapper .image-btn{
+    display: none;
+  }
+  .about-section .about-info {
+    padding: var(--size-30);
+  }
+  .why-us-section .why-us-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--size-10);
+  }
+  .product-table .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: var(--size-10);
+    row-gap: var(--size-10);
+  }
+  .product-grid .product-card {
+    padding-top: var(--size-15);
+    padding-bottom: var(--size-15);
+  }
+  main .product-slider {
+    display: none;
+  }
   .send-button {
     width: 99%;
   }
