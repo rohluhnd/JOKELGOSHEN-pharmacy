@@ -1,10 +1,10 @@
 
   @media screen and (max-width: 1114px) {
     .hero-section .hero-info {
-      bottom: -320px;
+      bottom: -20rem;
     }
     main .about-section {
-      margin-top: 400px;
+      margin-top: 25rem;
     }
     .about-section-1 {
       flex-wrap: wrap-reverse;
@@ -14,8 +14,8 @@
 /* For iPads and Tablets- Portrait */
 @media screen and (min-width: 435px ) and (max-width: 884px) {
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: var(--size-15);
+    padding-right: var(--size-15);
   }
   [aria-controls="navDropdown"] {
     display: block;
@@ -30,7 +30,7 @@
     top: var(--size-70);
     width: 100%;
     background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
-    box-shadow: 0px 0px 20px rgba(59, 56, 80, 0.1);
+    box-shadow: 0px 0px var(--size-20) rgba(59, 56, 80, 0.1);
     text-align: right;
     margin-bottom: var(--size-10);
   }
@@ -46,7 +46,7 @@
     justify-content: center;
   }
   .hero-section .hero-info {
-    max-width: 708px;
+    max-width: 44.25rem;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -59,7 +59,7 @@
     text-align: center;
   }
   main .about-section {
-    margin-top: 400px;
+    margin-top: 25rem;
     flex-wrap: wrap;
   }
   .about-image h2 {
@@ -67,13 +67,13 @@
     margin-bottom: var(--size-30);
   }
   .about-image-wrapper .image-btn{
-    right: -80px;
+    right: -var(--size-80);
   }
   .about-section .about-info {
-    max-width: 700px;
+    max-width: 43.75rem;
   }
   main .why-us-section {
-    margin-top: 50px;
+    margin-top: var(--size-50);
     margin-bottom: var(--size-150);
   }
   .why-us-section .why-us-grid {
@@ -119,8 +119,8 @@
 /* For mobile phones- Portrait */
 @media screen and (max-width: 430px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: var(--size-15);
+    padding-right: var(--size-15);
   }
   [aria-controls="navDropdown"] {
     display: block;
@@ -135,7 +135,7 @@
     top: var(--size-70);
     width: 100%;
     background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
-    box-shadow: 0px 0px 20px rgba(59, 56, 80, 0.1);
+    box-shadow: 0px 0px var(--size-20) rgba(59, 56, 80, 0.1);
     text-align: right;
     margin-bottom: var(--size-10);
   }
@@ -167,7 +167,7 @@
   .hero-section .hero-info {
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 400px;
+    max-width: 25rem;
   }
   .hero-info .hero-contact {
     flex: 1;
@@ -187,8 +187,8 @@
   .call-us .call-us-icon img,
 .mail-us .mail-us-icon img {
   color: var(--white-color);
-  width: 40px;
-  height: 40px;
+  width: var(--size-40);
+  height: var(--size-40);
 }
 .call-us h2, 
 .mail-us h2 {
@@ -208,7 +208,7 @@
   }
   main .about-section {
     flex-wrap: wrap;
-    margin-top: 400px;
+    margin-top: 25rem;
   }
   main .about-section-1 {
     flex-wrap: wrap-reverse;
@@ -218,24 +218,24 @@
     margin-bottom: var(--size-30);
   }
   .image .doctor-image {
-    width: 300px;
-    height:250px;
+    width: 18.75rem;
+    height:15.625rem;
     margin-left: var(--size-50);
   }
   .image .medicine-image {
     left: var(--size-10);
-    width: 150px;
-    height: 150px;
+    width: var(--size-150);
+    height: var(--size-150);
   }
   .about-image-1 .doctor-image-1 {
-    width: 300px;
-    height:250px;
-    margin-right: 50px;
+    width: 18.75rem;
+    height:15.625rem;
+    margin-right: var(--size-50);
   }
   .about-image-1 .medicine-image-1 {
-    width: 150px;
-    height: 150px;
-    bottom: 10px;
+    width: var(--size-150);
+    height: var(--size-150);
+    bottom: var(--size-10);
   }
   .about-image-wrapper .image-btn{
     display: none;
@@ -245,14 +245,14 @@
     padding: var(--size-30);
   }
   main .why-us-section {
-    margin-top: 100px;
+    margin-top: var(--size-100);
   }
   .why-us-section .why-us-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
     gap: var(--size-10);
   }
   .product-section .product-header {
-    max-width: 600px;
+    max-width: 37.5rem;
     margin: auto;
   }
   .product-header h2 {

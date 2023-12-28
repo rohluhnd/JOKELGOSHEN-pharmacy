@@ -1,6 +1,6 @@
 
 header {
-  max-width: 1200px;
+  max-width: 75rem;
   width: 100%;
   display: block;
   position: fixed;
@@ -50,13 +50,13 @@ header .top {
 header .bottom {
   display: flex;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: var(--size-10);
+  padding-bottom: var(--size-10);
   background-color: var(--alt-white);
 }
 .bottom.sticky {
   background: var(--white);
-  box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
+  box-shadow: 0px 0px var(--size-20) rgba(48, 63, 100, 0.2);
 }
 .bottom.sticky .nav-toggler span,
 .bottom.sticky .brand {
@@ -64,14 +64,14 @@ header .bottom {
 }
 .bottom .nav-toggler {
   position: absolute;
-  top: 40px;
+  top: var(--size-40);
   right: 0;
   margin-right: var(--size-50);
   border: 1px solid transparent;
   background-color: transparent;
 }
 .nav-toggler span {
-  font-size: 20px;
+  font-size: var(--size-20);
   font-weight: 600;
   color: var(--blue-color);
   cursor: pointer;
@@ -79,17 +79,17 @@ header .bottom {
 }
 .bottom .brand {
   margin-right: auto;
-  font-size: 16px;
+  font-size: var(--size-16);
 }
 .bottom .menu {
   display: flex;
-  gap: 20px;
+  gap: var(--size-20);
   justify-content: center;
 }
 .menu .menu-list {
   text-transform: uppercase;
   font-family: "Hind", sans-serif;
-  font-size: 14px;
+  font-size: var(--size-14);
   line-height: 1.7;
 }
 [aria-controls="navDropdown"] {
@@ -98,7 +98,7 @@ header .bottom {
 main .hero-section {
   display: flex;
   width: 100%;
-  height: 500px;
+  height: 31.25rem;
   position: relative;
   background-color: var(--green-color);
   background: url('../img/image1.jpg');
@@ -139,12 +139,12 @@ main .hero-section {
   position: absolute;
   bottom: -120px;
   gap: var(--size-30);
-  max-width: 1100px;
+  max-width: 68.75rem;
   width: 100%;
 }
 .hero-info .hero-contact {
   display: flex;
-  max-width: 600px;
+  max-width: 37.5rem;
   width: 100%;
   background-color: var(--green-color);
   color: var(--white-color);
@@ -274,7 +274,7 @@ main .about-section {
   display: flex;
   gap: var(--size-20);
   position: absolute;
-  bottom: 40px;
+  bottom: var(--size-40);
   right: -160px;
 }
 .image-btn .green {
@@ -293,7 +293,7 @@ main .about-section {
   margin-right: var(--size-5);
 }
 .about-section .about-info {
-  max-width: 600px;
+  max-width: 37.5rem;
   padding: var(--size-50);
   position: relative;
 }
@@ -354,7 +354,7 @@ main .product-section {
   margin-bottom: var(--size-100);
 }
 .product-section .product-header {
-  max-width: 600px;
+  max-width: 37.5rem;
   margin: auto;
 }
 .product-header h2 {
@@ -454,7 +454,7 @@ main .product-slider {
     }
     
   75% {
-    transform: translateX(-1200px);
+    transform: translateX(-75rem);
     } 
   }
 
@@ -557,7 +557,7 @@ main .ask-questions {
   height: 100%;
 }
 .ask-questions .ask-question-content {
-  max-width: 600px;
+  max-width: 37.5rem;
 }
 .ask-question-content h2 {
   text-align: center;
