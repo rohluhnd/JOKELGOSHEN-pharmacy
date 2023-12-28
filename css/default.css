@@ -82,4 +82,5 @@ p {
   background-color: transparent;
   border: 1px solid var(--green-color);
   border-radius: 4px;
+  cursor: pointer;
 }

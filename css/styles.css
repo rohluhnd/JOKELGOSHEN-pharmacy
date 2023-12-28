@@ -276,6 +276,7 @@ main .about-section {
   position: absolute;
   bottom: var(--size-40);
   right: -160px;
+  z-index: 100;
 }
 .image-btn .green {
   background-color: var(--green-color);
@@ -582,6 +583,7 @@ main .ask-questions {
   border: 1px solid var(--green-color);
   padding: var(--size-15) var(--size-30);
   background-color: var(--green-color);
+  z-index: 100;
 }
 footer .footer-top {
   display: flex;
