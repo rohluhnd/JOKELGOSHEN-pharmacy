@@ -48,6 +48,7 @@
   .hero-section .hero-info {
     max-width: 708px;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .hero-info .hero-contact {
     flex: 1;
@@ -164,8 +165,9 @@
     text-align: center;
   }
   .hero-section .hero-info {
-    max-width: 400px;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width: 400px;
   }
   .hero-info .hero-contact {
     flex: 1;
