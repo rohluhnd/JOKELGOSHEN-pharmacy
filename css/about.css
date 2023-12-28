@@ -2,17 +2,17 @@
 
 main .hero-section-1 {
   display: flex;
-  flex-direction: column;
-  padding-top: 0;
-  padding-bottom: 0;
+  width: 100%;
   height: 400px;
   position: relative;
   background-color: var(--green-color);
   background: url('../img/_ABY1915.jpg');
+  background-size: cover;
   background-position-y: 60%;
   background-position-x: 100%;
 }
 .hero-section-1::before {
+  width: 100%;
   height: 100%;
   position: absolute;
   content: "";
@@ -24,10 +24,10 @@ main .hero-section-1 {
 }
 .hero-section-1 .hero-header-1 {
   max-width: 300px;
+  width: 100%;
   position: relative;
   top: 220px;
   color: var(--white-color);
-  z-index: 1;
 }
 .hero-header-1 h1 {
   font-size: 30px;
@@ -42,12 +42,11 @@ main .hero-section-1 {
 }
 main .about-section-1 {
   display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-.about-section-1 {
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-20);
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: var(--size-100);
 }
 .about-section-1 .about-image-1  {
   position: relative; 

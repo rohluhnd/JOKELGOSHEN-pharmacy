@@ -10,33 +10,37 @@
     <script src="https://kit.fontawesome.com/cf7352dd8f.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div id="pageTop"></div> <! -- for scroll button -->
+
     <header>
+      <!-- top navbar section  -->
       <div class="container top">
         <span class="icon">
           <i class="fa-regular fa-clock"></i>
           Mon&#8212; Sat: 8am&#8210;6pm
         </span>
         <ul class="social">
-          <li class="social-link"><a href="#">
+          <li class="social-link"><a href="https://www.facebook.com/profile.php?id=61553356627083&mibextid=rS40aB7S9Ucbxw6v">
             <span class="social-icon"><i class="fa-brands fa-facebook-f"></i></span>
             <span>Facebook</span>
           </a></li>
-          <li class="social-link"><a href="#">
+          <li class="social-link"><a href="https://instagram.com/jokelgoshen?igshid=YWYwM2I1ZDdmOQ==">
             <span class="social-icon"><i class="fa-brands fa-instagram"></i></span>
             <span>Instagram</span>
           </a></li>
         </ul>
       </div>
-      <div class="container bottom">
+      <!-- bottom navbar section  -->
+      <nav class="container bottom" id="bottomNav">
         <button class="nav-toggler" aria-controls="navDropdown" aria-expanded="false">
-          <span>&#9776;</span>
+        <span>&#9776;</span>
         </button>
-        <a class="brand" href="#">JOKELGOSHEN&nbsp;Pharmacy</a>
+        <a class="brand" href="./index.html">JOKELGOSHEN&nbsp;Pharmacy</a>
         <ul class="menu">
           <li class="menu-list"><a href="./index.html">Home</a></li>
           <li class="menu-list"><a href="./contact.html">Contact&nbsp;Us</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main>
       <section class="container hero-section-1">
@@ -64,20 +68,13 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <ul class="address">
             <li class="office">
+              <span>Head Office:</span> Mirakel Plaza, beside NIPCO filling station, Eneka Road, Igwuruta, Port Harcourt</li>
+            <li class="office">
               <span>Branch Office:</span> Mirakel Plaza, beside NIPCO filling station, Eneka Road, Igwuruta, Port Harcourt</li>
             <li class="phone">
-              <span>Phone:</span> +234 810-381-2868</li>
-          </ul>
-          <ul class="social">
-            <li>
-              <a href="https://www.facebook.com/profile.php?id=61553356627083&mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-square-facebook"></i></a>
-            </li>
-            <li>
-              <a href="https://instagram.com/jokelgoshen?igshid=YWYwM2I1ZDdmOQ=="><i class="fa-brands fa-square-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
+              <span>Phone 1:</span> +234 810-381-2868</li>
+            <li class="phone">
+                <span>Phone 2:</span> +234 916-569-7447</li>
           </ul>
         </div>
         <div class="link">
@@ -119,5 +116,31 @@
         <span>Copyright&#x00A9;2023 JOKELGOSHEN-Pharmacy. All right Reserved</span>
       </div>
     </footer> 
+
+    
+    <a id="scrollUp" href="#pageTop">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+    
+    <script>
+
+  const nav = document.getElementById('bottomNav');
+  window.onscroll = function () {
+  if(window.pageYOffset > 100) {
+    nav.classList.add('sticky');
+  } else {
+    nav.classList.remove('sticky');
+  }
+}
+
+const navButton = document.querySelector('button[aria-expanded]');
+
+function toggleNav({ target }) {
+  const expanded = target.getAttribute('aria-expanded') === "true" || false;
+  navButton.setAttribute("aria-expanded", !expanded);
+}
+
+navButton.addEventListener("click", toggleNav);
+    </script>
   </body>
 </html>

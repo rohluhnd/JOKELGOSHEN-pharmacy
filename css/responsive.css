@@ -39,7 +39,9 @@
     margin-right: var(--size-50);
     color: var(--font-color-dark);
   }
-  main .hero-section {
+  main .hero-section,
+  main .hero-section-1,
+  main .hero-section-2  {
     display: flex;
     justify-content: center;
   }
@@ -151,9 +153,15 @@
   .navbar .brand img {
     width: var(--size-100);
   }
-  main .hero-section {
+  main .hero-section,
+  main .hero-section-1,
+  main .hero-section-2  {
     display: flex;
     justify-content: center;
+  }
+  .hero-header-1 h1,
+  .hero-header-1 p {
+    text-align: center;
   }
   .hero-section .hero-info {
     max-width: 400px;
@@ -164,7 +172,7 @@
   }
   .hero-info .hero-contact .call-us,
   .hero-info .hero-contact .mail-us {
-    padding: var(--size-10) var(--size-30);
+    padding: var(--size-10) var(--size-20);
     text-align: center;
   }
   .call-us div, 
@@ -174,43 +182,83 @@
     height: var(--size-40);
     border-radius: 50%;
   }
+  .call-us .call-us-icon img,
+.mail-us .mail-us-icon img {
+  color: var(--white-color);
+  width: 40px;
+  height: 40px;
+}
+.call-us h2, 
+.mail-us h2 {
+  font-size: var(--size-15);
+  font-weight: 600;
+  margin: 0;
+}
   .call-us span, 
   .mail-us span {
   font-size: var(--size-10);
   font-weight: 600;
   }
+  main .about-section,
+  main .about-section-1 {
+    justify-content: center;
+    align-items: center;
+  }
   main .about-section {
-    margin-top: 400px;
     flex-wrap: wrap;
+    margin-top: 400px;
+  }
+  main .about-section-1 {
+    flex-wrap: wrap-reverse;
   }
   .about-image h2 {
     text-align: center;
     margin-bottom: var(--size-30);
   }
   .image .doctor-image {
-    margin-left: var(--size-80);
     width: 300px;
     height:250px;
+    margin-left: var(--size-50);
   }
   .image .medicine-image {
-    left: var(--size-20);
+    left: var(--size-10);
     width: 150px;
     height: 150px;
+  }
+  .about-image-1 .doctor-image-1 {
+    width: 300px;
+    height:250px;
+    margin-right: 50px;
+  }
+  .about-image-1 .medicine-image-1 {
+    width: 150px;
+    height: 150px;
+    bottom: 10px;
   }
   .about-image-wrapper .image-btn{
     display: none;
   }
-  .about-section .about-info {
+  .about-section .about-info,
+  .about-section-1 .about-info-1  {
     padding: var(--size-30);
+  }
+  main .why-us-section {
+    margin-top: 100px;
   }
   .why-us-section .why-us-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--size-10);
   }
+  .product-section .product-header {
+    max-width: 600px;
+    margin: auto;
+  }
+  .product-header h2 {
+    text-align: center;
+  }
   .product-table .product-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    column-gap: var(--size-10);
-    row-gap: var(--size-10);
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: var(--size-10);
   }
   .product-grid .product-card {
     padding-top: var(--size-15);
@@ -221,5 +269,20 @@
   }
   .send-button {
     width: 99%;
+  }
+  #scrollUp {
+    background-color: rgba(226,248,245,255);
+    color: var(--white);
+    font-size: var(--size-15);
+    height: var(--size-40);
+    width: var(--size-40);
+    line-height: var(--size-40);
+    position: fixed;
+    bottom: var(--size-30);
+    right: var(--size-10);
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 100;
   }
 }

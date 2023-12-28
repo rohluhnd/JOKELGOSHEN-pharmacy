@@ -3,13 +3,12 @@
 
 main .hero-section-2 {
   display: flex;
-  flex-direction: column;
-  padding-top: 0;
-  padding-bottom: 0;
-  height: 500px;
+  width: 100%;
+  height: 400px;
   position: relative;
   background-color: var(--green-color);
   background: url('../img/_ABY1959.jpg');
+  background-size: cover;
   background-position-y: 30%;
   background-position-x: 60%;
 }
@@ -48,7 +47,8 @@ main .contact-section {
 .contact-section .contact-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 20px;
+  place-content: center;
 }
 /* Left contact page */
 .contact-wrapper .contact-form {
@@ -90,7 +90,7 @@ main .contact-section {
 }
 /* Begin Right Contact Page */
 .contact-wrapper .contact-info {
-  padding: 20px;
+  padding: 15px;
 }
 .contact-info .contact-list {
   display: block;
@@ -99,8 +99,11 @@ main .contact-section {
 .contact-list .list-item {
   margin-bottom: 10px;
 }
+.list-item i {
+  font-size: 20px;
+}
 .list-item .contact-text {
-  margin-left: 40px;
+  margin-left: 10px;
   font: 300 18px 'Lato', sans-serif;
   letter-spacing: 1.9px;
 }
@@ -126,8 +129,8 @@ main .contact-section {
 .social-media-list li {
   position: relative; 
   display: inline-block;
-  height: 60px;
   width: 60px;
+  height: 60px;
   margin: 10px 3px;
   line-height: 60px;
   border-radius: 50%;
