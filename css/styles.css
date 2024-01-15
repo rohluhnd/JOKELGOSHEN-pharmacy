@@ -80,6 +80,8 @@ header .bottom {
 .bottom .brand {
   margin-right: auto;
   font-size: var(--size-16);
+  font-weight: 600;
+  color: var(--green-color);
 }
 .bottom .menu {
   display: flex;
