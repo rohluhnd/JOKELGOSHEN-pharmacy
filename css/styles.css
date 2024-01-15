@@ -439,7 +439,7 @@ main .product-slider {
   animation: slider 10s linear infinite;
 }
 .slider img {
-  width: 300px;
+  width: 250px;
   margin: 0 40px;
 }
 
