@@ -28,18 +28,20 @@
   --size-100: 6.25rem;
   --size-150: 9.375rem;
 }
-
-* {
+html {
+  scroll-behavior: smooth;
+}
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
-
 body {
   font-family: "Roboto", sans-serif, "Source Serif 4", "Source Serif 4 Placeholder", serif;
   line-height: 1.7;
   background-color: var(--white-color);
   max-width: 1200px;
   margin: auto;
-  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;

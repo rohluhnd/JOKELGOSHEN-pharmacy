@@ -430,34 +430,25 @@ main .product-section {
 main .product-slider {
   display: block;
   overflow: hidden;
+  white-space: nowrap;
 }
 .product-slider .slider {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--size-30);
-  
+  display: inline-block;
+  animation: slider 10s linear infinite;
 }
-.slider .image {
-  animation: slider 20s ease-in 10s infinite normal both;
+.slider img {
+  width: 300px;
+  margin: 0 40px;
 }
 
 @keyframes slider {
-  0% {
+  from {
     transform: translateX(0);
     }
-  
-  25% {
-    transform: translateX(-400px);
+  to {
+    transform: translateX(-100%);
     } 
-
-  50% {
-    transform: translateX(-800px);
-    }
-    
-  75% {
-    transform: translateX(-75rem);
-    } 
-  }
+}
 
   
 main .testimonials {
